@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application form</title>
+    <style>
+        .wrap{
+            color:red;
+        }
+        #hi{
+            color:green;
+        }
+    </style>
+    <img src="./infosis.png" align="right"/><br>
+</head>
+<body style="background-color: rgb(223, 229, 158);" border="7">
+    <FROM metod="post">
+        <fieldset weidth="500px">
+            
+    <h1 style="color: rgb(39, 225, 225);">EMPLOYEMENT APPLICATION FORM</h1><hr height="40px"/><hr>
+
+    <table>
+        <h2 STYLE="color: rgb(102, 83, 211);">
+            <fieldset style="background-color:rgb(179, 97, 179)">
+            PERSONAL INFORMATION
+        </fieldset>
+        </h2>
+        <tr>
+            <td>
+                name:
+            </td>
+            <td>
+                <input type="name" placeholder="enter your name" maxlength="25" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                contact number:
+            </td>
+            <td>
+                <input type="tel" pattern="[0-9]{10}" placeholder="phone number" required/>&nbsp&nbsp;
+                <input type="tel" pattern="[0-9]{10}" placeholder="telecome number" />
+            </td>
+        </tr>
+        <tr>
+            <TD>
+                DOB:
+            </TD>
+            <td>
+                <input style="date" placeholder="dd/mm/yyyy" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                contact adress:
+            </td>
+            <td>
+                <textarea name="discription" required>
+
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                email:
+            </td>
+            <td>
+                <input type="email" placeholder="xxx@gmail.com" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>hobbies:</td>
+            <td>
+                <input type="text" placeholder="enter your hobbies" optional/>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+    <table>
+        <h2 STYLE="color: rgb(211, 50, 155);">
+            <fieldset style="background-color: rgb(90, 162, 239);">
+            additional information
+        </fieldset>
+        </h2>
+        <hr>
+        Are you legaly to work in the other countries like U.s,canada etc.,<br/>
+        <input type="radio" name="option"/>yes &nbsp;<input type="radio" name="option" required/>no<br/><hr/>
+        Have you ever been convicted of a felony?<br/>
+        <input type="radio" name="option"/>yes &nbsp;<input type="radio" name="option" required/>no<br/>
+        if yes,explain:<textarea style="background-color: rgb(221, 191, 152);" placeholder="optional">
+        </textarea><br><hr/>
+        Have you been employed by this organization in the past?<br/>
+        <input type="radio" name="option"/>yes &nbsp;<input type="radio" name="option" required/>no<br/><hr/>
+    </table>
+    <h2 STYLE="color: rgb(157, 73, 128);">
+        <fieldset style="background-color: rgb(144, 185, 230);";>
+        POSITION DETAILS
+    </fieldset>
+    </h2>
+    <hr>
+    <p>
+        <b>position you are applying for *:</b>
+        <select name="dropdown">
+            <option value="<--select one-->"><--select--></option>
+            <option value="software engineer">software engineer</option>
+            <option value="senior software engineer">senior software engineer</option>
+            <option value="software architecture">software architecture</option>    
+            <option value="system engineer">select</option>
+            <option value="developer">developer</option>
+            <option value="system admisnistrator">system admisnistrator</option>
+            <option value="full stack developer">full stack developer</option>
+            <option value="front end developer">front end developer</option>
+            <option value="data engineer">data engineer</option>
+            <option value="product manager">product manager</option>
+            <option value="back end developer">back end developer</option>
+            <option value="product manager">product manager</option>
+            <option value="data analyst">data analyst</option>
+            <option value="data scientist">data scientist</option>
+            <option value="quality assurance analyst">quality assurance analyst</option>
+            <option value="senor system engineer">senor system engineer</option>
+        </select><br/>
+        <b>avaliable start date &nbsp;&nbsp;:</b>
+        <input type="date" min="01/01/2023" max="31/12/2024"><br/>
+        <b>Desired pay &nbsp&nbsp:</b>
+        <input type="number" min="10000" max="2500000">
+        <br/>
+        <b>
+            employemet type:
+        </b><br/>
+        <input type="radio" name="full  time"/>full-time<br/>
+        <input type="radio" name="parttime"/>part-time<br/>
+        <input type="radio" name="temporary"/>temporary<br/>
+        <input type="radio" name="internship"/>internship<br/>
+    </p>
+    <HR/>
+    <h2 STYLE="color: rgb(196, 67, 200);">
+        <fieldset style="background-color: rgb(37, 195, 169);";>
+        EDUCATION*
+       
+    </fieldset>
+    </h2>
+    <TABLE border="4">
+        <tr>
+            <th>
+                s.no
+            </th>
+            <th>
+                school/collage
+            </th>
+            <th>
+                year
+            </th>
+            <th>
+                degree
+            </th>
+            <th>
+                result
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1.
+            </td>
+            <td>
+                <input type="text" placeholder="ssc/cbse"/>
+            </td>
+            <td>
+                <input type="number"/>
+            </td>
+            <td>
+                <input type="text"/>
+            </td>
+            <td>
+                <input type="text" placeholder="%ormarks"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.
+            </td>
+            <td>
+                <input type="text" placeholder="intemediate/diploma"/>
+            </td>
+            <td>
+                <input type="number"/>
+            </td>
+            <td>
+                <input type="text"/>
+            </td>
+            <td>
+                <input type="text"  placeholder="%ormarks"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3.
+            </td>
+            <td>
+                <input type="text" placeholder="btech/degree"/>
+            </td>
+            <td>
+                <input type="number"/>
+            </td>
+            <td>
+                <input type="text"/>
+            </td>
+            <td>
+                <input type="text"  placeholder="%ormarks"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4.
+            </td>
+            <td>
+                <input type="text" placeholder="mtech/msc"/>
+            </td>
+            <td>
+                <input type="number"/>
+            </td>
+            <td>
+                <input type="text"/>
+            </td>
+            <td>
+                <input type="text"  placeholder="%ormarks"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                5.
+            </td>
+            <td>
+                <input type="text" placeholder="additional"/>
+            </td>
+            <td>
+                <input type="number"/>
+            </td>
+            <td>
+                <input type="text"/>
+            </td>
+            <td>
+                <input type="text"  placeholder="%ormarks"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                6.
+            </td>
+            <td>
+                <input type="text" placeholder="additional"/>
+            </td>
+            <td>
+                <input type="number"/>
+            </td>
+            <td>
+                <input type="text"/>
+            </td>
+            <td>
+                <input type="text"  placeholder="%ormarks"/>
+            </td>
+        </tr>
+    </TABLE>
+    <hr color="blue"/>
+    Add resume:
+    <input type="file" placeholder="Resume" required/>
+    <hr color="vilot"/>
+    <input type="checkbox"/>accept terms &conditions of our company
+     <hr/>
+     <button  class="wrap" onclick="alert('reset succesfully')">RESET</button>
+     <button id="hi" type="submit" onclick="alert('submitted succesfully')" >SUBMIT</button>
+     
+</fieldset>
+
+</FROM>
+</body>
+</html> 
